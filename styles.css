@@ -12,6 +12,10 @@ body {
     width:300px;
     padding:10px;
 }
+.assignmentSketch img{
+    width:150px;
+    padding:5px;
+}
 h1 {
     color: yellow;
     text-align:center;
