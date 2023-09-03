@@ -1,0 +1,84 @@
+/*Structure*/
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(images/willyb.jpg);
+}
+
+#content
+{
+    background: rgba(245, 245, 220, 0.7);
+    width: 65%;
+    margin: auto;
+    padding: 0px;
+    border-radius: 5px;
+    box-shadow: 5px 5px maroon;
+}
+
+/*Tables*/
+
+table
+{
+    border-collapse: collapse;
+}
+
+th,td
+{
+    border: 1px solid black;
+    padding: 4px;
+}
+
+th
+{
+    background: darkred; 
+    color: beige; 
+}
+
+/*Typography*/
+
+body
+{
+    
+}
+
+h1
+{
+    color: maroon;
+}
+
+h2
+{
+    color: maroon;
+}
+
+p
+{
+    color: black;
+}
+
+
+
+/*Navigation*/
+
+#main-nav a
+{
+    text-decoration: none;
+    background-color: beige;
+    color: black;
+    padding: 4px;
+    border-radius: 3px;
+}
+
+#main-nav a:hover
+{
+    background: maroon;
+}
+
+/*Images*/
+
+img
+{
+    border: 5px solid maroon;
+    border-radius: 5px;
+}
