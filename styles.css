@@ -1,0 +1,59 @@
+/*Structure*/
+
+body
+{
+    background-color:beige;
+}
+
+#content
+{
+    width: 65%;
+}
+
+/*Typography/Fonts*/
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1
+{
+    color:forestgreen;
+}
+
+h3
+{
+    color: #5C4033;
+}
+
+p
+{
+    color: #5C4033;
+}
+
+h2
+{
+    color:forestgreen
+}
+
+li
+{
+    color: #5C4033;
+}
+
+/*Navigation*/
+
+a
+{
+    text-decoration: none;
+    background-color: gold;
+    color: black;
+    padding: 4px;
+    border-radius: 3px;
+}
+
+a:hover
+{
+    background: orange;
+}
