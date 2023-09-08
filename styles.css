@@ -1,13 +1,65 @@
 /*Structure*/
 
-body
-{
-    background-color:beige;
+body {
+    background-color: #1E2749;
+    margin: 0;
+    padding: 0;
 }
 
-#content
-{
-    width: 65%;
+#main-content {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #337357;
+    border-radius: 12px;
+}
+
+header {
+    background-color: #1E2749;
+    color: antiquewhite;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.assignments {
+    display: flex;
+}
+
+.assignments-1of3 {
+    background-color: #6D9F71;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    min-width: 250px;
+    max-width: 30%;
+    text-align: center;
+}
+
+.image-1of3 {
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    background-color: #E4E3D3;
+    border-radius: 5px;
+    color: black;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    width: 75%;
+    margin: auto;
+    text-align: center;
 }
 
 /*Typography/Fonts*/
@@ -17,29 +69,27 @@ body
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h1
-{
-    color:forestgreen;
+header p {
+    font-size: 18px;
 }
 
-h3
-{
-    color: #5C4033;
+.assignments a {
+    color: #1E2749;
+    font-size: 18px;
+    font-weight: bolder;
 }
 
-p
-{
-    color: #5C4033;
+.assignments p {
+    color: #1E2749;
+    font-size: 16px;
+    font-weight: bold;
 }
 
-h2
-{
-    color:forestgreen
-}
-
-li
-{
-    color: #5C4033;
+footer p {
+    margin: 5px 0;
+    font-size: 17px;
+    font-weight: bolder;
+    color: #337357;
 }
 
 /*Navigation*/
@@ -47,13 +97,33 @@ li
 a
 {
     text-decoration: none;
-    background-color: gold;
     color: black;
-    padding: 4px;
-    border-radius: 3px;
 }
 
 a:hover
 {
-    background: orange;
+    color: orange;
+}
+
+/*Larger Resolution*/
+
+@media screen and (max-width: 800px) {
+    .assignments, .image-1of3, .footer-content {
+        display: flex;
+    }
+
+    .assignments {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .assignments-1of3 {
+        flex: 1;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }
