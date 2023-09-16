@@ -1,4 +1,5 @@
 /* Structure */
+
 body {
     background-color: #020122;
     color: #F2F3AE;
@@ -36,7 +37,6 @@ footer {
 img {
     max-width: 100%;
     display: block;
-    padding: 20px 10px;
     margin: auto;
 }
 
@@ -79,6 +79,7 @@ p, h1, h2 {
 }
 
 /* Larger Resolutions */
+
 @media only screen and (min-width: 900px) {
     .flex-container {
         display: flex;
