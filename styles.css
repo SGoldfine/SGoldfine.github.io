@@ -32,6 +32,10 @@ footer {
     text-align: center;
 }
 
+.assignments-1of3 a {
+    margin: 10px;
+}
+
 /* Images */
 
 img {
