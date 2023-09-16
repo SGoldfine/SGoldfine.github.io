@@ -24,6 +24,14 @@
     border-radius: 2px;
 }
 
+.comment {
+    background-color: chartreuse;
+    border: 5px solid indigo;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 2px;
+}
+
 #button-show, #button-hide {
     margin: auto;
     margin-bottom: 5px;
@@ -33,8 +41,8 @@
     display: none;
 }
 
-#football {
-    background: transparent;
+#text-bars {
+    text-align: left;
 }
 
 /*Animation*/
@@ -43,7 +51,7 @@
     position: relative;
     animation-name: anim-ball;
     animation-duration: 2s;
-    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
 }
 
 @keyframes anim-ball {
@@ -80,7 +88,7 @@ h1, h2 {
 
 @media only screen and (min-width: 900px) {
     
-    .content {
+    .flex-container {
         display: flex;
     }
     
