@@ -1,0 +1,129 @@
+/*Structure*/
+
+:root {
+    --num: 0%;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: khaki;
+}
+
+.padded-area {
+    padding: 5px;
+    margin: auto;
+}
+
+#ex1of2,
+#ex2of2 {
+    background-color: cadetblue;
+}
+
+/*Gradients*/
+
+#donate {
+    width: 100px;
+    height: 300px;
+    background: #fff;
+    margin: 5px;
+}
+
+#gradient {
+    width: 100px;
+    height: 300px;
+}
+
+.filledg {
+    background: linear-gradient(0deg, red var(--num), white var(--num) 100%);
+}
+
+/*Navigation*/
+
+#main-header {
+    background-color: cadetblue;
+    text-align: center;
+    color: khaki;
+}
+
+#main-nav ul {
+    padding-left: 0px;
+    list-style-type: none;
+}
+
+#main-nav li {
+    background: khaki;
+    padding: 10px;
+}
+
+#main-nav a {
+    text-decoration: none;
+    color: cadetblue;
+}
+
+/*Hamburger Menu*/
+
+#nav-toggle div {
+    width: 35px;
+    height: 5px;
+    background-color: khaki;
+    margin: 6px 0;
+}
+
+/*Typography*/
+
+#main-nav-items {
+    font-size: 1.2em;
+}
+
+.hidden {
+    display: none;
+}
+
+#error,
+#error2 {
+    color: red;
+}
+
+/*Form*/
+
+label,
+input {
+    display: block;
+}
+  
+label {
+    width: 100px;
+    text-align: right;
+    padding: 5px;
+}
+
+/*Larger Resolutions*/
+
+@media (min-width: 900px) {
+    #main-nav-items {
+        display: flex;
+    }
+
+    #main-nav-items li {
+        flex: 1;
+    }
+
+    #main-nav-items a {
+        border-bottom: 2px solid transparent;
+    }
+
+    #main-nav-items a:hover {
+        border-bottom: 2px solid cadetblue;
+    }
+
+    #nav-toggle {
+        display: none;
+    }
+
+    .columns {
+        display: flex;
+    }
+
+    .columns section {
+        flex: 1;
+    }
+}
