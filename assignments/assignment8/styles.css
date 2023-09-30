@@ -10,15 +10,15 @@ body {
     color: white;
 }
 
-.flex-container {
+.padded-area {
     padding: 5px;
     margin: auto;
 }
 
 .ex1of2,
 .ex2of2 {
-    margin: 5px;
-    padding: 20px;
+    margin: 10px;
+    padding: 40px 20px;
     background-color: darkblue;
     border-radius: 10px;
     border: 7px solid lightblue;
@@ -26,16 +26,20 @@ body {
 }
 
 .ex1of2 {
+    height: 175px;
     position: relative;
-    height: 200px;
-    top: 150px;
+    top: 0px;
 }
 
+/*Animation*/
+
 #img {
-    padding-right: 500px;
+    --x: -500px;
+    margin-left: var(--x);
     height: 120px;
     background-color: transparent;
 }
+
 
 /*Gradients*/
 
@@ -51,7 +55,7 @@ body {
     height: 300px;
 }
 
-.filledg {
+.gfull {
     background: linear-gradient(0deg, red var(--num), white var(--num) 100%);
 }
 
@@ -65,7 +69,7 @@ body {
 
 label,
 input {
-    display: inline;
+    display: inline-flex;
 }
 
 label {
@@ -84,5 +88,9 @@ label {
     .ex1of2,
     .ex2of2 {
         flex: 1;
+    }
+
+    .ex1of2 {
+        top: 150px;
     }
 }
