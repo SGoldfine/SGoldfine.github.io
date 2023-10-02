@@ -34,7 +34,7 @@ body {
 /*Animation*/
 
 #img {
-    --x: -500px;
+    --x: 0px;
     margin-left: var(--x);
     height: 120px;
     background-color: transparent;
