@@ -11,10 +11,14 @@ body {
     margin: auto;
 }
 
-#main-nav li,
-h1 {
+#main-nav li {
     text-align: center;
-}       
+} 
+
+h1 {
+    text-align: left;
+    margin-bottom: 75px;
+}
 
 #main-footer p {
     text-align: right;
