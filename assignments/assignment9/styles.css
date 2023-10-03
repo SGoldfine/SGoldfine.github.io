@@ -19,9 +19,9 @@ body {
 .ex2of2 {
     margin: 10px;
     padding: 40px 20px;
-    background-color: darkblue;
+    background-color: crimson;
     border-radius: 10px;
-    border: 7px solid lightblue;
+    border: 7px solid white;
     text-align: center;
 }
 
@@ -34,7 +34,7 @@ body {
 
 #rainbow-button {
     padding: 5px 12px;
-    background-color: darkblue;
+    background-color: crimson;
     color: white;
     border-radius: 8px;
 }
