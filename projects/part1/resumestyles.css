@@ -24,7 +24,8 @@ h3 {
 }
 
 .sec1,
-.sec3 {
+.sec3,
+.sec4 {
     margin: 10px;
     padding: 10px 10px;
     background: white;
@@ -107,13 +108,15 @@ body {
 
     .work,
     .education,
-    .activities {
+    .activities,
+    .skills {
         display: flex;
         flex-wrap: wrap;
     }
 
     .sec1,
-    .sec3 {
+    .sec3,
+    .sec4 {
         flex: 1;
     }
 

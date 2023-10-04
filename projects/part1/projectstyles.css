@@ -102,6 +102,10 @@ body {
     font-size: 1.4em;
 }
 
+span {
+    font-weight: bolder;
+}
+
 /*Larger Resolution*/
 
 @media only screen and (min-width:1300px) {
@@ -113,12 +117,16 @@ body {
         flex: 1;
     }
 
-    #main-content {
+    .modern,
+    .web,
+    .soft {
         display: flex;
         flex-wrap: wrap;
     }
 
-    .project {
+    .sec1,
+    .sec2,
+    .sec3 {
         flex: 25%;
     }
 
