@@ -27,6 +27,20 @@ h3 {
     margin-top: -30px;
 }
 
+.sec1,
+.sec2,
+.sec3 {
+    margin: 10px;
+    padding: 10px 10px;
+    background: white;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+
+#main-content h1 {
+    text-align: center;
+}
+
 /*Main Nav*/
 
 #main-nav ul {
@@ -76,32 +90,31 @@ body {
     font-size: 1.2em;
 }
 
+#main-content p {
+    font-size: 1.4em;
+}
+
 /*Larger Resolution*/
 
 @media only screen and (min-width:1300px) {
-    #main-nav-items,
-    .columns {
+    #main-nav-items {
         display: flex;
     }
 
-    .columns {
+    #main-nav-items li {
+        flex: 1;
+    }
+
+    .web,
+    .modern,
+    .soft {
+        display: flex;
         flex-wrap: wrap;
     }
 
-    #sec3 {
-        flex: 50%;
-        position: relative;
-        bottom: 50px;
-        left: 700px;
-    }
-
-    #sec2 {
-        position: relative;
-        top: 150px;
-        right: 600px;
-    }
-    
-    #main-nav-items li {
+    .sec1,
+    .sec2,
+    .sec3 {
         flex: 1;
     }
 
@@ -109,7 +122,4 @@ body {
         display: none;
     }
 
-    #main-footer {
-        margin-top: 100px;
-    }
 }
