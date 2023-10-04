@@ -77,11 +77,34 @@ body {
     font-size: 1.5em;
 }
 
+#main-content li {
+    font-size: 1.2em;
+}
+
 /*Larger Resolution*/
 
 @media only screen and (min-width:900px) {
-    #main-nav-items {
+    #main-nav-items,
+    .columns {
         display: flex;
+    }
+
+    .columns {
+        flex-wrap: wrap;
+    }
+
+    #sec1 {
+        flex: 50%;
+    }
+
+    #sec2 {
+        position: relative;
+        top: 150px;
+    }
+
+    #img {
+        position: relative;
+        right: 75px;
     }
 
     #main-nav-items li {
@@ -90,5 +113,9 @@ body {
 
     #nav-toggle {
         display: none;
+    }
+
+    #main-footer {
+        margin-top: 100px;
     }
 }

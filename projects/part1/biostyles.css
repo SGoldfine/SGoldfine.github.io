@@ -17,19 +17,11 @@ h1 {
 }       
 
 h1 {
-    margin-bottom: 75px;
+    margin-bottom: 50px;
 }
 
 #main-footer p {
     text-align: right;
-}
-
-#main-content p {
-    padding-right: 100px;
-}
-
-h3 {
-    margin-top: -30px;
 }
 
 /*Main Nav*/
@@ -77,6 +69,10 @@ body {
     font-size: 1.5em;
 }
 
+#main-content p {
+    font-size: 1.2em;
+}
+
 /*Larger Resolution*/
 
 @media only screen and (min-width:900px) {
@@ -90,5 +86,9 @@ body {
 
     #nav-toggle {
         display: none;
+    }
+
+    #main-content p {
+        padding-right: 100px;
     }
 }
