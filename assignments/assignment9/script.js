@@ -13,11 +13,21 @@ const slide = () => {
 }
 
 const displayRainbow = () => {
-    const resultDiv = document.getElementById("result");
-    
+    const currentColor = document.querySelector("#colors :first-child");
+    currentColor.classList.remove("hidden");
+
+    let nextColor = currentColor.nextElementSibling;
+
+    let img = document.getElementById("gold")
+    if(nextColor == null) {
+        img.classList.remove("hidden");
+    }
+
+    nextColor.classList.remove("hidden");
 }
 
 window.onload = () => {
     setInterval(slide, 2000);
     document.getElementById("rainbow-button").onclick = displayRainbow;
+    setInterval(displayRainbow, 2000);
 }
