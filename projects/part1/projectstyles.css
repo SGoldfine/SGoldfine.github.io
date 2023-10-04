@@ -72,6 +72,14 @@ h3 {
     margin: 6px 0;
 }
 
+/* Images */
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
 /*Typography*/
 
 body {
@@ -110,9 +118,7 @@ body {
         flex-wrap: wrap;
     }
 
-    .web,
-    .modern,
-    .soft {
+    .project {
         flex: 25%;
     }
 
