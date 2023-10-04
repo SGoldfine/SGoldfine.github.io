@@ -93,20 +93,19 @@ body {
         flex-wrap: wrap;
     }
 
-    #sec1 {
+    #sec3 {
         flex: 50%;
+        position: relative;
+        bottom: 50px;
+        left: 700px;
     }
 
     #sec2 {
         position: relative;
         top: 150px;
+        right: 600px;
     }
-
-    #img {
-        position: relative;
-        right: 75px;
-    }
-
+    
     #main-nav-items li {
         flex: 1;
     }
