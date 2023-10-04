@@ -15,11 +15,6 @@ body {
     text-align: center;
 } 
 
-h1 {
-    text-align: left;
-    margin-bottom: 75px;
-}
-
 #main-footer p {
     text-align: right;
 }
@@ -85,21 +80,17 @@ body {
 
 @media only screen and (min-width:1300px) {
     #main-nav-items,
-    .columns {
+    .work {
         display: flex;
     }
 
-    .columns {
+    .work {
         flex-wrap: wrap;
     }
 
-    #sec1 {
+    #sec1,
+    h1 {
         flex: 50%;
-    }
-
-    #sec2 {
-        position: relative;
-        top: 100px;
     }
 
     #main-nav-items li {

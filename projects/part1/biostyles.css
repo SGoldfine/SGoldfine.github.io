@@ -11,14 +11,9 @@ body {
     margin: auto;
 }
 
-#main-nav li,
-h1 {
+#main-nav li {
     text-align: center;
 }       
-
-h1 {
-    margin-bottom: 50px;
-}
 
 #main-footer p {
     text-align: right;
