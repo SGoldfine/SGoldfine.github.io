@@ -105,17 +105,15 @@ body {
         flex: 1;
     }
 
-    .web,
-    .modern,
-    .soft {
+    #main-content {
         display: flex;
         flex-wrap: wrap;
     }
 
-    .sec1,
-    .sec2,
-    .sec3 {
-        flex: 1;
+    .web,
+    .modern,
+    .soft {
+        flex: 25%;
     }
 
     #nav-toggle {
