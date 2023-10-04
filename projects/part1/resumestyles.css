@@ -23,22 +23,7 @@ h3 {
     margin-top: -30px;
 }
 
-.sec1 {
-    margin: 10px;
-    padding: 10px 10px;
-    background: white;
-    border-radius: 10px;
-    border: 3px solid black;
-}
-
-.sec2 {
-    margin: 10px;
-    padding: 10px 10px;
-    background: white;
-    border-radius: 10px;
-    border: 3px solid black;
-}
-
+.sec1,
 .sec3 {
     margin: 10px;
     padding: 10px 10px;
@@ -47,7 +32,15 @@ h3 {
     border: 3px solid black;
 }
 
-h1 {
+.sec2 {
+    margin: auto;
+    padding: 10px 10px;
+    background: white;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+
+#main-content h1 {
     text-align: center;
 }
 
@@ -112,10 +105,18 @@ body {
         flex: 1;
     }
 
-    .flex-container {
+    .work,
+    .education,
+    .activities {
         display: flex;
+        flex-wrap: wrap;
     }
-    
+
+    .sec1,
+    .sec3 {
+        flex: 1;
+    }
+
     #nav-toggle {
         display: none;
     }

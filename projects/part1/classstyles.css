@@ -27,6 +27,19 @@ h3 {
     margin-top: -30px;
 }
 
+.sec1,
+.sec2 {
+    margin: auto;
+    padding: 10px 10px;
+    background: white;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+
+#main-content h1 {
+    text-align: center;
+}
+
 /*Main Nav*/
 
 #main-nav ul {
@@ -79,35 +92,26 @@ body {
 /*Larger Resolution*/
 
 @media only screen and (min-width:1300px) {
-    #main-nav-items,
-    .columns {
+    #main-nav-items {
         display: flex;
-    }
-
-    .columns {
-        flex-wrap: wrap;
-    }
-
-    #sec2,
-    #sec4 {
-        flex: 50%;
     }
 
     #main-nav-items li {
         flex: 1;
     }
 
+    .code,
+    .gen {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .sec1,
+    .sec2 {
+        flex: 1;
+    }
+
     #nav-toggle {
         display: none;
-    }
-
-    #sec2 {
-        position: relative;
-        left: 200px;
-    }
-
-    #sec4 {
-        position: relative;
-        left: 375px;
     }
 }
