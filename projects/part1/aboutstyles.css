@@ -70,7 +70,7 @@ body {
 
 /*Larger Resolution*/
 
-@media only screen and (min-width:1300px) {
+@media only screen and (min-width:900px) {
     #main-nav-items {
         display: flex;
     }
