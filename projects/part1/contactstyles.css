@@ -4,7 +4,6 @@ body {
     background-color: white;
 }
 
-#main-content,
 #main-header,
 #main-footer {
     padding: 20px 40px;
@@ -120,10 +119,6 @@ body {
         padding: 0 200px;
     }
 
-    #btn-submit {
-        text-align: center;
-    }
-
     #main-nav-items li {
         flex: 1;
     }
@@ -133,8 +128,7 @@ body {
     }
 
     #btn {
-        position: absolute;
-        left: 900px;
+        padding: 40px;
     }
 
     /*Text Boxes*/
