@@ -37,8 +37,42 @@ h3 {
     border: 3px solid black;
 }
 
+.sec4 {
+    margin: auto;
+    padding: 10px 10px;
+    background: white;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+
+.comment {
+    margin: 10px;
+    padding: 10px 10px;
+    background: white;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+
 #main-content h1 {
     text-align: center;
+}
+
+/*Form*/
+
+label,
+input {
+    display: inline;
+}
+  
+label {
+    width: 100px;
+    text-align: right;
+    padding: 5px;
+}
+
+#button-add {
+    height: 30px;
+    width: 100px;
 }
 
 /*Main Nav*/
@@ -119,7 +153,8 @@ span {
 
     .modern,
     .web,
-    .soft {
+    .soft,
+    .input {
         display: flex;
         flex-wrap: wrap;
     }
