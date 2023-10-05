@@ -26,20 +26,24 @@ body {
 /*Text Boxes*/
 
 #txt-message {
-    width: 300px;
-    height: 50px;
+    width: 400px;
+    height: 70px;
 }
 
 #txt-name,
 #txt-email,
 #txt-subject {
-    width: 200px;
-    height: 20px;
+    width: 400px;
+    height: 35px;
 }
 
 #btn-submit {
     height: 50px;
     width: 100px;
+}
+
+input {
+    border-radius: 10px;
 }
 
 /*Main Nav*/
@@ -91,21 +95,33 @@ body {
 
 @media only screen and (min-width:900px) {
     #main-nav-items,
-    .img1of3,
-    .columns {
+    .img1of3 {
         display: flex;
     }
 
+    .input {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img1of3,
+    .input {
+        justify-content: space-between;
+    }
+
+    #box1 {
+        text-align: left;
+    }
     #box2 {
-        margin-top: 150px;
-        position: relative;
-        right: 150px;
+        text-align: right;
+    }
+    #box1,
+    #box2 {
+        padding: 0 200px;
     }
 
     #btn-submit {
-        position: relative;
-        top: 100px;
-        right: 100px;
+        text-align: center;
     }
 
     #main-nav-items li {
@@ -116,12 +132,32 @@ body {
         display: none;
     }
 
-    .img1of3,
-    .columns {
-        justify-content: space-between;
+    #btn {
+        position: absolute;
+        left: 900px;
     }
 
-    .columns {
-        text-align: center;
+    /*Text Boxes*/
+
+    #txt-message {
+        width: 700px;
+        height: 70px;
+        margin-bottom: 50px;
+    }
+
+    #txt-name,
+    #txt-email,
+    #txt-subject {
+        width: 700px;
+        height: 35px;
+    }
+
+    #btn-submit {
+        height: 50px;
+        width: 100px;
+    }
+
+    input {
+        border-radius: 10px;
     }
 }
