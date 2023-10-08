@@ -39,32 +39,21 @@ body {
     border-radius: 8px;
 }
 
-/*Rainbow*/
+.rainbowColors {
+    width: 500px;
+    height: 30px;
+    margin: 0px;
+}
 
-#red {
-    background-color: red;
-}
-#orange {
-    background-color: orange;
-}
-#yellow {
-    background-color: yellow;
-}
-#green {
-    background-color: green;
-}
-#blue {
-    background-color: blue;
-}
-#purple {
-    background-color: purple;
+#pot {
+    position: relative;
+    top: -160px;
+    left: 200px;
+    height: 150px;
+    width: 150px;
 }
 
 /*Typography*/
-
-#error {
-    color: red;
-}
 
 .ex1of2,
 .ex2of2 {
