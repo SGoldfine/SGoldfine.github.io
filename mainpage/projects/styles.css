@@ -1,0 +1,149 @@
+/* Structure */
+
+body {
+    background-color: #020122;
+    color: #F2F3AE;
+}
+
+#main-header {
+    text-align: center;
+    background-color: #020122;
+    padding: 5px;
+    margin: 10px;
+    border: 7px solid #F4442E;
+    border-radius: 10px;
+}
+
+#main-nav li {
+    text-align: center;
+}
+
+footer {
+    margin: 10px;
+    padding: 20px 10px;
+    background: #020122;
+    border-radius: 10px;
+    border: 7px solid #F4442E;
+    text-align: center;
+}
+
+.projects {
+    margin: 10px;
+    padding: 40px 20px;
+    background: #F4442E;
+    border-radius: 10px;
+    border: 7px solid #FC9E4F;
+    text-align: center;
+}
+
+.projects a {
+    margin: 10px;
+}
+
+/*Main Nav*/
+
+#main-nav ul {
+    padding-left: 0px;
+    padding: 5px;
+    margin: 5px;
+}
+
+#main-nav li {
+    list-style-type: none;
+    padding: 5px;
+}
+
+#main-nav a {
+    text-decoration: none;
+    color: #F4442E;
+}
+
+/*Hamburger Menu*/
+
+#nav-toggle div {
+    width: 35px;
+    height: 5px;
+    background-color: #F4442E;
+    margin: 6px 0;
+}
+
+
+/* Images */
+
+img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+/* Navigation */
+
+a {
+    color:black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: orange;
+}
+
+
+/* Typography */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+    font-size: 18px;
+    font-weight: bolder;
+    color:#F2F3AE;
+}
+
+p, h1, h2 {
+    color: #F2F3AE;
+    text-align: center;
+}
+
+.projects p {
+    font-size: 18px;
+}
+
+.projects a {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.hidden {
+    display: none;
+}
+
+#main-nav li {
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+/* Larger Resolutions */
+
+@media only screen and (min-width: 900px) {
+    #main-nav-items {
+        display: flex;
+    }
+
+    #main-nav-items li {
+        flex: 1;
+    }
+
+    #nav-toggle {
+        display: none;
+    }
+    
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .projects {
+        flex: 25%;
+    }
+}

@@ -14,6 +14,10 @@ body {
     border-radius: 10px;
 }
 
+#main-nav li {
+    text-align: center;
+}
+
 footer {
     margin: 10px;
     padding: 20px 10px;
@@ -32,18 +36,35 @@ footer {
     text-align: center;
 }
 
-.projects {
+.assignments-1of3 a {
     margin: 10px;
-    padding: 40px 20px;
-    background: #F4442E;
-    border-radius: 10px;
-    border: 7px solid #FC9E4F;
-    text-align: center;
 }
 
-.assignments-1of3 a,
-.projects a {
-    margin: 10px;
+/*Main Nav*/
+
+#main-nav ul {
+    padding-left: 0px;
+    padding: 5px;
+    margin: 5px;
+}
+
+#main-nav li {
+    list-style-type: none;
+    padding: 5px;
+}
+
+#main-nav a {
+    text-decoration: none;
+    color: #F4442E;
+}
+
+/*Hamburger Menu*/
+
+#nav-toggle div {
+    width: 35px;
+    height: 5px;
+    background-color: #F4442E;
+    margin: 6px 0;
 }
 
 /* Images */
@@ -83,27 +104,45 @@ p, h1, h2 {
     text-align: center;
 }
 
-.assignments-1of3 p,
-.projects p {
+.assignments-1of3 p {
     font-size: 18px;
 }
 
-.assignments-1of3 a,
-.projects a {
+.assignments-1of3 a {
     font-size: 20px;
+    font-weight: bolder;
+}
+
+.hidden {
+    display: none;
+}
+
+#main-nav li {
+    font-size: 1.5em;
     font-weight: bolder;
 }
 
 /* Larger Resolutions */
 
 @media only screen and (min-width: 900px) {
+    #main-nav-items {
+        display: flex;
+    }
+
+    #main-nav-items li {
+        flex: 1;
+    }
+
+    #nav-toggle {
+        display: none;
+    }
+
     .flex-container {
         display: flex;
         flex-wrap: wrap;
     }
 
-    .assignments-1of3,
-    .projects {
+    .assignments-1of3 {
         flex: 25%;
     }
 }
