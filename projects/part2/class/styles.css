@@ -94,6 +94,10 @@ span {
     font-weight: bolder;
 }
 
+#main-footer {
+    font-weight: bolder;
+}
+
 /*Larger Resolution*/
 
 @media only screen and (min-width:1100px) {
