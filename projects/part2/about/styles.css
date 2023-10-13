@@ -1,10 +1,9 @@
 /*Body*/
 
 body {
-    background-color: white;
+    background-color: #788BFF;
 }
 
-#main-content,
 #main-header,
 #main-footer {
     padding: 20px 40px;
@@ -17,6 +16,15 @@ body {
 
 #main-footer p {
     text-align: right;
+}
+
+.columns,
+#main-nav-items {
+    margin: 10px;
+    padding: 10px 10px;
+    background: white;
+    border-radius: 10px;
+    border: 3px solid #363537;
 }
 
 /*Main Nav*/

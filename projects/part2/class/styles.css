@@ -1,7 +1,7 @@
 /*Body*/
 
 body {
-    background-color: white;
+    background-color: #788BFF;
 }
 
 #main-content,
@@ -28,12 +28,13 @@ h3 {
 }
 
 .sec1,
-.sec2 {
+.sec2,
+#main-nav-items {
     margin: 10px;
     padding: 10px 10px;
     background: white;
     border-radius: 10px;
-    border: 3px solid black;
+    border: 3px solid #363537;
 }
 
 #main-content h1 {
