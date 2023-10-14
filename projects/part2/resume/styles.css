@@ -25,17 +25,10 @@ h3 {
 
 .sec1,
 .sec3,
+.sec2,
 .sec4,
 #main-nav-items {
     margin: 10px;
-    padding: 10px 10px;
-    background: white;
-    border-radius: 10px;
-    border: 3px solid #363537;
-}
-
-.sec2 {
-    margin: auto;
     padding: 10px 10px;
     background: white;
     border-radius: 10px;
@@ -127,5 +120,13 @@ body {
 
     #nav-toggle {
         display: none;
+    }
+
+    .sec2 {
+        margin: auto;
+        padding: 10px 10px;
+        background: white;
+        border-radius: 10px;
+        border: 3px solid #363537;
     }
 }
