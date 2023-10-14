@@ -156,8 +156,7 @@ body {
     }
     #btn {
         margin-top: 50px;
-        position: relative;
-        left: 312px;
+        text-align: center;
     }
 
     #txt-message {
