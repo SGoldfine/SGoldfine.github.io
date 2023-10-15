@@ -28,7 +28,7 @@ footer {
 }
 
 .projects {
-    margin: 10px;
+    margin: 25px;
     padding: 40px 20px;
     background: #F4442E;
     border-radius: 10px;
@@ -141,9 +141,11 @@ p, h1, h2 {
     .flex-container {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .projects {
         flex: 25%;
+        flex-grow: 0;
     }
 }
