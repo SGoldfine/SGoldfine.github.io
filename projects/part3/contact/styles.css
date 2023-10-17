@@ -18,10 +18,6 @@ body {
     text-align: right;
 }
 
-#btn {
-    margin-top: 50px;
-}
-
 .img1of3 {
     display: flex;
     justify-content: space-between;
@@ -29,19 +25,19 @@ body {
 
 /*Text Boxes*/
 
-#txt-message {
+#messagebox {
     width: 400px;
     height: 70px;
 }
 
-#txt-name,
-#txt-email,
-#txt-subject {
+#namebox,
+#emailbox,
+#subjectbox {
     width: 400px;
     height: 35px;
 }
 
-#btn-submit {
+#submit {
     height: 50px;
     width: 100px;
 }
@@ -155,23 +151,22 @@ body {
         right: 295px;
     }
     #btn {
-        margin-top: 50px;
         text-align: center;
     }
 
-    #txt-message {
+    #messagebox {
         width: 700px;
         height: 70px;
     }
 
-    #txt-name,
-    #txt-email,
-    #txt-subject {
+    #namebox,
+    #emailbox,
+    #subjectbox {
         width: 700px;
         height: 35px;
     }
 
-    #btn-submit {
+    #submit {
         height: 50px;
         width: 100px;
     }

@@ -27,26 +27,37 @@
 
         <main id="main-content" class="columns">
             <section class="input">
-                <section id="box1">
-                    <h2 id="name">Name (Required)</h2>
-                    <input type="text" id="txt-name">
-                </section>
-                <section id="box2">
-                    <h2 id="email">Email (Required)</h2>
-                    <input type="text" id="txt-email">
-                </section>
-                <section id="box1">
-                    <h2 id="subject">Subject</h2>
-                    <input type="text" id="txt-subject">
-                </section>
-                <section id="box2">
-                    <h2 id="message">Message</h2>
-                    <input type="text" id="txt-message">
-                </section>
+               
+                <form action="https://api.web3forms.com/submit" method="POST">
+
+                    <input type="hidden" name="access_key" value="5dba5740-f9d3-4a80-91fb-a799dfd9ae47">
+
+                    <section id="box1">
+                        <h2 id="name">Name (Required)</h2>
+                        <input id="namebox" type="text" name="Name" required>
+                    </section>
+                    <section id="box2">
+                        <h2 id="email">Email (Required)</h2>
+                        <input id="emailbox" type="email" name="Email" required>
+                    </section>
+                    <section id="box1">
+                        <h2 id="subject">Subject</h2>
+                        <input id="subjectbox" type="subject" name="Subject">
+                    </section>
+                    <section id="box2">
+                        <h2 id="message">Message</h2>
+                        <textarea id="messagebox" name="message" required></textarea>
+                    </section>
+                    <div class="h-captcha" data-captcha="true"></div>
+                    <div id="btn">
+                        <button id="submit" type="submit">Submit</button>
+                    </div>
+                </form>
             </section>
-            <div id="btn">
-                <button id="btn-submit">Submit</button>
-            </div>
+           
+            
+            
+            <script src="https://web3forms.com/client/script.js" async defer></script>
         </main>
 
         <footer id="main-footer">
