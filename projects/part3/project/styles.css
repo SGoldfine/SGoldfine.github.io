@@ -30,7 +30,6 @@ h3 {
 .sec1,
 .sec2,
 .sec3,
-newproject,
 #main-nav-items {
     margin: 10px;
     padding: 10px 10px;
@@ -136,6 +135,15 @@ span {
 
 #main-footer {
     font-weight: bolder;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #788BFF;
 }
 
 /*Larger Resolution*/
