@@ -35,10 +35,10 @@ const toggleAct = () => {
 }
 
 const logSubmit = () => {
-    const name = document.getElementById("txt-name").value;
-    const email = document.getElementById("txt-email").value;
-    const subject = document.getElementById("txt-subject").value;
-    const message = document.getElementById("txt-message").value;
+    const name = document.getElementById("namebox").value;
+    const email = document.getElementById("emailbox").value;
+    const subject = document.getElementById("subjectbox").value;
+    const message = document.getElementById("messagebox").value;
 
     console.log(name); 
     console.log(email); 
@@ -53,5 +53,5 @@ window.onload = () => {
     document.getElementById("p3of5").onclick = toggleEdu;
     document.getElementById("p4of5").onclick = toggleAct;
 
-    document.getElementById("btn-submit").onclick = logSubmit;
+    document.getElementById("submit").onclick = logSubmit;
 }
