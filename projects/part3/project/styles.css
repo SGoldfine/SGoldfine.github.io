@@ -30,20 +30,13 @@ h3 {
 .sec1,
 .sec2,
 .sec3,
+.sec4,
 #main-nav-items {
     margin: 10px;
     padding: 10px 10px;
     background: white;
     border-radius: 10px;
     border: 3px solid #363537;
-}
-
-.sec4 {
-    margin: auto;
-    padding: 10px 10px;
-    background: white;
-    border-radius: 10px;
-    border: 3px solid black;
 }
 
 #main-content h1 {
@@ -138,7 +131,7 @@ span {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: underline;
     color: black;
 }
 
@@ -160,14 +153,15 @@ a:hover {
     .modern,
     .web,
     .soft,
-    .input {
+    #newproj {
         display: flex;
         flex-wrap: wrap;
     }
 
     .sec1,
     .sec2,
-    .sec3 {
+    .sec3,
+    .sec5 {
         flex: 25%;
     }
 
@@ -175,4 +169,11 @@ a:hover {
         display: none;
     }
 
+    .sec4 {
+        margin: auto;
+        padding: 10px 10px;
+        background: white;
+        border-radius: 10px;
+        border: 3px solid black;
+    }
 }

@@ -15,13 +15,20 @@ const showModernFrame = () => {
 const printProject = () => {
     document.getElementById("boxes").classList.add("comment");
 
-    const newproject = document.getElementById("input");
+    const newproject = document.getElementById("new");
+
+    const name = document.getElementById("txt-name").value;
 
     const link = document.getElementById("txt-link").value;
     
-    const description = document.getElementById("txt-description").value;
+    const description1 = document.getElementById("txt-description1").value;
+    const description2 = document.getElementById("txt-description2").value;
+    const description3 = document.getElementById("txt-description3").value;
+    const description4 = document.getElementById("txt-description4").value;
 
-    newproject.innerHTML += `<section class = "separate"><p><strong>${link}</strong></p> <ul class="small"><li>${description}</li></ul></section>`;
+    newproject.innerHTML += `<font size="+2"><h1 id = "soft">${name}</h1><font> <section class = "sec4"> <p><a href><strong>${link}</strong></a></p> <ul><li>${description1}</li><li>${description2}</li><li>${description3}</li><li>${description4}</li></ul></section>`;
+
+    document.getElementById("new").classList.toggle("hidden");
 }
 
 
