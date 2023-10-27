@@ -1,18 +1,18 @@
 :root {
   --background: #C97C5D;
-  --text: #6B2737;
+  --text: #57110c;
   --movie: #f09e7e;
   --border: #C89F9C;
-  --label: #57110c;
+  --label: #6B2737;
 }
   
   body {
-    font-family: 'Arial', sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: var(--background);
     margin: 0;
     padding: 0;
-    color: var(--text);
-  }
+    color: var(--text); 
+  }      
   
   main {
     padding: 20px;
@@ -53,10 +53,6 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   }
   
-  .movie-details {
-    width: 65%;
-  }
-  
   ul {
     list-style-type: none;
     padding: 0;
@@ -72,7 +68,7 @@
     margin-right: 5px;
     color: var(--label);
   }
-
+  
   /*Larger Resolutions*/
   
   @media only screen and (min-width: 768px) {
