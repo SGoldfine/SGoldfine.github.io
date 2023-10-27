@@ -1,7 +1,5 @@
 const getMovies = async () => {
-    const url =
-      "https://portiaportia.github.io/json/movies.json";
-  
+    const url = "https://portiaportia.github.io/json/movies.json";
     try {
       const response = await fetch(url);
       return await response.json();
@@ -26,31 +24,39 @@ const getMovies = async () => {
     h3.innerText = movie.title;
     section.append(h3);
 
-    let p1 = document.createElement("p");
-    p1.innerText = "Director: " + movie.director;
-    section.append(p1);
-
-    let p2 = document.createElement("p");
-    p2.innerText = "Actors: " + movie.actors;
-    section.append(p2);
-
-    let p3 = document.createElement("p");
-    p3.innerText = "Year Released: " + movie.year;
-    section.append(p3);
-
-    let p4 = document.createElement("p");
-    p4.innerText = "Genres: " + movie.genres;
-    section.append(p4);
-
-    let p5 = document.createElement("p");
-    p5.innerText = movie.description;
-    section.append(p5);
-  
     let img = document.createElement("img");
+    img.src = "https://portiaportia.github.io/json/" + movie.img;
     section.append(img);
-    img.src = movie.img;
-  
+
+    let details = document.createElement("div");
+    details.classList.add("movies-details");
+    section.append(details);
+
+    let ul = document.createElement("ul");
+    details.append(ul);
+
+    Object.keys(movie).forEach((key) => {
+      if(key !== "title" && key !== "img") {
+        let li = document.createElement("li");
+        ul.append(li);
+
+        let label = document.createElement("label");
+        label.innerText = `${capitalize(key)}: `;
+        li.append(label);
+
+        if(Array.isArray(movie[key])) {
+          li.append(movie[key].join(", "));
+        } else {
+          li.append(movie[key]);
+        }
+      }
+    });
     return section;
   };
+
+  const capitalize = (string) => {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  };
+
   
   window.onload = () => showMovies();

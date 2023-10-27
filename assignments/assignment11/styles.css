@@ -1,0 +1,89 @@
+:root {
+  --background: #C97C5D;
+  --text: #6B2737;
+  --movie: #f09e7e;
+  --border: #C89F9C;
+  --label: #57110c;
+}
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background);
+    margin: 0;
+    padding: 0;
+    color: var(--text);
+  }
+  
+  main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1 {
+    text-align: center;
+    color: var(--text);
+  }
+  
+  .movie {
+    padding: 20px;
+    margin: 25px;
+    background: var(--movie);
+    border-radius: 10px;
+    border: 2px solid var(--text);
+  }
+  
+  h3 {
+    text-align: left;
+    margin-bottom: 10px;
+    color: var(--text);
+  }
+  
+  .movie img {
+    width: 30%;
+    border-radius: 3px;
+    transition: transform 0.3s, z-index 0s, box-shadow 0.3s;
+    z-index: 1;
+  }
+  
+  .movie img:hover {
+    transform: scale(1.5);
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .movie-details {
+    width: 65%;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-right: 5px;
+    color: var(--label);
+  }
+
+  /*Larger Resolutions*/
+  
+  @media only screen and (min-width: 768px) {
+    .movie {
+      max-width: 700px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .movie {
+      max-width: 800px;
+    }
+  }
+  
