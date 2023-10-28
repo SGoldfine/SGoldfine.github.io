@@ -1,4 +1,4 @@
-const getClasses = async () => {
+const getCourses = async () => {
     const url = "https://sgoldfine.github.io/jsons/classes.json";
     try {
         const response = await fetch(url);
@@ -9,21 +9,27 @@ const getClasses = async () => {
 };
 
 const showClasses = async () => {
-    let classes = await getClasses();
-    let classSection = document.getElementById("classes");
-    classes.forEach((class) => 
-      classSection.append(getClass(class))
+    let courses = await getCourses();
+    let courseSection = document.getElementById("courses");
+    courses.forEach((course) => 
+      courseSection.append(getCourse(course))
     );
 };
 
-const getClass = (class) => {
-    let main = document.getElementById("classes");
+const getCourse = (course) => {
     let section = document.createElement("section");
-    section.classList.add("class");
+    section.classList.add("course");
 
-    h1 = document.createElement("h1");
-    h1.innerText = class.title;
-    main.append(h1);
+    let h1 = document.createElement("h1");
+    h1.innerText = course.title;
+    section.append(h1);
+
+    let details = document.createElement("classesDiv");
+    details.classList.add("classes-details");
+    section.append(details);
+
+    let ul = document.createElement("ul");
+    details.append(ul);
 
     return section;
 };
@@ -35,4 +41,5 @@ const toggleNav = () => {
 
 window.onload = () => {
     document.getElementById("nav-toggle").onclick = toggleNav;
+    showClasses();
 }
