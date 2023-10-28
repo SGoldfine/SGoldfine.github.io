@@ -50,12 +50,14 @@ const getProjects = async () => {
   };
   
   const getProject = (project) => {
+    let main = document.getElementById("main-content");
+
     let section = document.createElement("section");
     section.classList.add("project");
   
     let h1 = document.createElement("h1");
     h1.innerText = project.title;
-    section.append(h1);
+    main.append(h1);
 
     let h3 = document.createElement("h3");
     h3.innerText = project.link;
@@ -68,18 +70,9 @@ const getProjects = async () => {
     let ul = document.createElement("ul");
     details.append(ul);
 
-    Object.keys(project).forEach((key) => {
-      if(key !== "title" && key !== "img" && key != "link") {
-        let li = document.createElement("li");
-        ul.append(li);
-
-        if(Array.isArray(project[key])) {
-          li.append(project[key].join(", "));
-        } else {
-          li.append(project[key]);
-        }
-      }
-    });
+    let liA = document.createElement("li");
+    liA.innerText = project.description;
+    ul.append(liA);
 
     let img = document.createElement("img");
     img.src = "https://sgoldfine.github.io/jsons/" + project.img;
