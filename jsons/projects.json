@@ -9,5 +9,27 @@
             "Styled to get an understanding of CSS rather than look professional"
         ],
         "img": "images/modern.png"
+    },
+    {
+        "title": "Web Application",
+        "link": "sgoldfine.github.io",
+        "description": [
+            "Website created in CSCE 242 - Web Application",
+            "Implements JavaScript, HTML, and CSS",
+            "Goal of the website is to use advanced techniques to create exercises and become proficient in website development",
+            "Styled to look clean and professional"
+        ],
+        "img": "images/web.png"
+    },
+    {
+        "title": "Software Engineering",
+        "link": "N/A",
+        "description": [
+            "Project created in CSCE 247 - Software Engineering",
+            "Implements Java",
+            "Goal of the project is to create an application in Java while learning all the steps that go into software development",
+            "This application allows users to create task lists, thus increasing workplace efficiency"
+        ],
+        "img": "images/web.png"
     }
 ]

@@ -82,9 +82,9 @@ const getProjects = async () => {
     });
 
     let img = document.createElement("img");
-    img.src = "https://sgoldfine.github.io/jsons/projects.json" + project.img;
+    img.src = "https://sgoldfine.github.io/jsons/" + project.img;
     section.append(img);
-    
+
     return section;
   };
 
