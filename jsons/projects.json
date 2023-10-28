@@ -2,34 +2,28 @@
     {
         "title": "Computing in the Modern World",
         "link": "sgoldfine.github.io/csce190",
-        "description": [
-            "Website created in CSCE 190 - Computing in the Modern World",
-            "Implements beginner HTML and CSS",
-            "Goal of the website is to learn the basics of website development",
-            "Styled to get an understanding of CSS rather than look professional"
-        ],
+        "descrA": "Website created in CSCE 190 - Computing in the Modern World",
+        "descrB": "Implements beginner HTML and CSS",
+        "descrC": "Goal of the website is to learn the basics of website development",
+        "descrD": "Styled to get an understanding of CSS rather than look professional",
         "img": "images/modern.png"
     },
     {
         "title": "Web Application",
         "link": "sgoldfine.github.io",
-        "description": [
-            "Website created in CSCE 242 - Web Application",
-            "Implements JavaScript, HTML, and CSS",
-            "Goal of the website is to use advanced techniques to create exercises and become proficient in website development",
-            "Styled to look clean and professional"
-        ],
+        "descrA": "Website created in CSCE 242 - Web Application",
+        "descrB": "Implements JavaScript, HTML, and CSS",
+        "descrC": "Goal of the website is to use advanced techniques to create exercises and become proficient in website development",
+        "descrD": "Styled to look clean and professional",
         "img": "images/web.png"
     },
     {
         "title": "Software Engineering",
         "link": "N/A",
-        "description": [
-            "Project created in CSCE 247 - Software Engineering",
-            "Implements Java",
-            "Goal of the project is to create an application in Java while learning all the steps that go into software development",
-            "This application allows users to create task lists, thus increasing workplace efficiency"
-        ],
-        "img": "images/web.png"
+        "descrA": "Project created in CSCE 247 - Software Engineering",
+        "descrB": "Implements Java",
+        "descrC": "Goal of the project is to create an application in Java while learning all the steps that go into software development",
+        "descrD": "This application allows users to create task lists, thus increasing workplace efficiency",
+        "img": "images/soft.png"
     }
 ]
