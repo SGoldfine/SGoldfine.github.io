@@ -8,7 +8,7 @@ const getCourses = async () => {
     }
 };
 
-const showClasses = async () => {
+const showCourses = async () => {
     let courses = await getCourses();
     let courseSection = document.getElementById("courses");
     courses.forEach((course) => 
@@ -24,12 +24,13 @@ const getCourse = (course) => {
     h1.innerText = course.title;
     section.append(h1);
 
-    let details = document.createElement("classesDiv");
-    details.classList.add("classes-details");
+    let details = document.createElement("courseDiv");
+    details.classList.add("course-details");
     section.append(details);
 
-    let ul = document.createElement("ul");
-    details.append(ul);
+    let p1 = document.createElement("p");
+    p1.innerText = course.course1;
+    details.append(p1);
 
     return section;
 };
@@ -41,5 +42,5 @@ const toggleNav = () => {
 
 window.onload = () => {
     document.getElementById("nav-toggle").onclick = toggleNav;
-    showClasses();
+    showCourses();
 }
