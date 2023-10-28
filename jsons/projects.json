@@ -1,0 +1,13 @@
+[
+    {
+        "title": "Computing in the Modern World",
+        "link": "sgoldfine.github.io/csce190",
+        "description": [
+            "Website created in CSCE 190 - Computing in the Modern World",
+            "Implements beginner HTML and CSS",
+            "Goal of the website is to learn the basics of website development",
+            "Styled to get an understanding of CSS rather than look professional"
+        ],
+        "img": "/projects/part4/images/modern.png"
+    }
+]
