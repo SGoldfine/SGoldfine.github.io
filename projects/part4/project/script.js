@@ -71,8 +71,17 @@ const getProjects = async () => {
     details.append(ul);
 
     let liA = document.createElement("li");
-    liA.innerText = project.description;
+    liA.innerText = project.descrA;
     ul.append(liA);
+    let liB = document.createElement("li");
+    liB.innerText = project.descrB;
+    ul.append(liB);
+    let liC = document.createElement("li");
+    liC.innerText = project.descrC;
+    ul.append(liC);
+    let liD = document.createElement("li");
+    liD.innerText = project.descrD;
+    ul.append(liD);
 
     let img = document.createElement("img");
     img.src = "https://sgoldfine.github.io/jsons/" + project.img;
