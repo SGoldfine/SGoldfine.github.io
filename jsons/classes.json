@@ -1,16 +1,13 @@
 [
     {
         "title": "Coding Courses",
-        "classes": 
-        [
-            "Algorithmic Design I - Problem-solving, algorithmic design, and programming.",
-            "Algorithmic Design II - Rigorous development of algorithms and computer programs; elementary data structures.",
-            "Computing in the Modern World - An introduction to the field of computing: trends in computing technology, the profession, and careers; subdisciplines in computing; the nature of research and development.",
-            "UNIX/Linux Fundamentals - UNIX operating system, user-level system commands, and programming tools. UNIX scripting languages.",
-            "Web Applications - Web technologies to support client-server computing. Implementation of client-server applications.",
-            "Computer Hardware Foundations - Number representation, data formats, CPU and memory organization, assembly language, I/O and peripherals, computer networks.",
-            "Software Engineering - Fundamentals of software design and development; software implementation strategies; object-oriented design techniques; functional design techniques; design patterns; design process; source control; testing."
-        ]
+        "class1": "Algorithmic Design I - Problem-solving, algorithmic design, and programming.",
+        "class2": "Algorithmic Design II - Rigorous development of algorithms and computer programs; elementary data structures.",
+        "class3": "Computing in the Modern World - An introduction to the field of computing: trends in computing technology, the profession, and careers; subdisciplines in computing; the nature of research and development.",
+        "class4": "UNIX/Linux Fundamentals - UNIX operating system, user-level system commands, and programming tools. UNIX scripting languages.",
+        "class5": "Web Applications - Web technologies to support client-server computing. Implementation of client-server applications.",
+        "class6": "Computer Hardware Foundations - Number representation, data formats, CPU and memory organization, assembly language, I/O and peripherals, computer networks.",
+        "class7": "Software Engineering - Fundamentals of software design and development; software implementation strategies; object-oriented design techniques; functional design techniques; design patterns; design process; source control; testing."
     },
     {
         "title": "General Courses",
