@@ -1,3 +1,5 @@
+/*Structure*/
+
 :root {
   --background: #C97C5D;
   --text: #57110c;
@@ -7,7 +9,6 @@
 }
   
   body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: var(--background);
     margin: 0;
     padding: 0;
@@ -21,11 +22,6 @@
     align-items: center;
   }
   
-  h1 {
-    text-align: center;
-    color: var(--text);
-  }
-  
   .movie {
     padding: 20px;
     margin: 25px;
@@ -33,12 +29,8 @@
     border-radius: 10px;
     border: 2px solid var(--text);
   }
-  
-  h3 {
-    text-align: left;
-    margin-bottom: 10px;
-    color: var(--text);
-  }
+
+  /*Images*/
   
   .movie img {
     width: 30%;
@@ -52,7 +44,24 @@
     z-index: 10;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   }
-  
+
+  /*Typography*/
+
+  body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  h1 {
+    text-align: center;
+    color: var(--text);
+  }
+
+  h3 {
+    text-align: left;
+    margin-bottom: 10px;
+    color: var(--text);
+  }
+
   ul {
     list-style-type: none;
     padding: 0;
