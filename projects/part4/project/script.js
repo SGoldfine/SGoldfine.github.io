@@ -15,7 +15,7 @@ const toggleNav = () => {
 const printProject = () => {
     document.getElementById("boxes").classList.add("comment");
 
-    const newproject = document.getElementById("new");
+    const newproject = document.getElementById("newproj");
 
     const name = document.getElementById("txt-name").value;
 
