@@ -151,14 +151,7 @@ a:hover {
         display: flex;
         flex-wrap: wrap;
     }
-
-    .sec1,
-    .sec2,
-    .sec3,
-    .sec5 {
-        flex: 25%;
-    }
-
+    
     #nav-toggle {
         display: none;
     }
