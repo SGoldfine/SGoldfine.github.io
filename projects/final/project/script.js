@@ -4,7 +4,7 @@ const toggleNav = () => {
 
 const getProjects = async() => {
   try {
-      return (await fetch("api/projects/")).json();
+      return (await fetch("http://localhost:3001/api/projects")).json();
   } catch (error) {
       console.log(error);
   }
@@ -84,7 +84,7 @@ const displayDetails = (project) => {
 };
 
 const deleteProject = async(project) => {
-  let response = await fetch(`/api/projects/${project._id}`, {
+  let response = await fetch(`http://localhost:3001/api/projects${project._id}`, {
       method: "DELETE",
       headers: {
           "Content-Type": "application/json"
@@ -131,14 +131,14 @@ const addEditProject = async(e) => {
   if (form._id.value == -1) {
       formData.delete("_id");
 
-      response = await fetch("/api/projects", {
+      response = await fetch("http://localhost:3001/api/projects", {
           method: "POST",
           body: formData
       });
   } else {
       console.log(...formData);
 
-      response = await fetch(`/api/projects/${form._id.value}`, {
+      response = await fetch(`http://localhost:3001/api/projects/${form._id.value}`, {
           method: "PUT",
           body: formData
       });
