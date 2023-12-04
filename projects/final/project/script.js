@@ -84,7 +84,7 @@ const displayDetails = (project) => {
 };
 
 const deleteProject = async(project) => {
-  let response = await fetch(`http://localhost:3001/api/projects${project._id}`, {
+  let response = await fetch(`https://final-project-l8qk.onrender.com/${project._id}`, {
       method: "DELETE",
       headers: {
           "Content-Type": "application/json"
@@ -131,14 +131,14 @@ const addEditProject = async(e) => {
   if (form._id.value == -1) {
       formData.delete("_id");
 
-      response = await fetch("http://localhost:3001/api/projects", {
+      response = await fetch("https://final-project-l8qk.onrender.com/", {
           method: "POST",
           body: formData
       });
   } else {
       console.log(...formData);
 
-      response = await fetch(`http://localhost:3001/api/projects/${form._id.value}`, {
+      response = await fetch(`https://final-project-l8qk.onrender.com/${form._id.value}`, {
           method: "PUT",
           body: formData
       });

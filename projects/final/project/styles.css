@@ -11,7 +11,14 @@ body {
     margin: 10px;
     background: white;
     border-radius: 10px;
-    border: 3px solid black;
+    border: 3px solid #363537;
+}
+
+#main-header,
+#main-footer,
+.columns {
+    padding: 20px 40px;
+    margin: auto;
 }
 
 #main-nav li {
@@ -24,9 +31,11 @@ body {
     margin: auto;
 }
 
-#main-footer {
-    padding: 20px 40px;
+#em {
+    text-align: right;
     margin-top: -350px;
+}
+#num {
     text-align: right;
 }
 
@@ -34,7 +43,7 @@ body {
     font-size: 1.5em;
     padding: 5px;
     border-radius: 10px;
-    border: 3px solid black;
+    border: 3px solid #363537;
     background-color: white;
     transition: transform 0.3s, z-index 0s, box-shadow 0.3s;
     z-index: 1;
