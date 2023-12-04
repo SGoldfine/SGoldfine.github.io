@@ -13,9 +13,9 @@ const upload = multer({ dest: __dirname + "/public/images" });
 mongoose
     .connect("mongodb://localhost/projects")
     .then(() => {
-        console.log("Connected to mongodb")
+        console.log("Connected to mongodb!")
     })
-    .catch((error) => console.log("Couldn't connect to mongodb", error));
+    .catch((error) => console.log("Couldn't connect to mongodb!", error));
 
 app.get("/", (req, res) => {
     res.sendFile(__dirname + "/index.html");
