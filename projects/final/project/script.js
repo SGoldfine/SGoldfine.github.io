@@ -4,7 +4,7 @@ const toggleNav = () => {
 
 const getProjects = async() => {
   try {
-      return (await fetch("http://localhost:3001/api/projects")).json();
+      return (await fetch("https://final-project-l8qk.onrender.com/")).json();
   } catch (error) {
       console.log(error);
   }
