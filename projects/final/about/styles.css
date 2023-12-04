@@ -27,6 +27,17 @@ body {
     border: 3px solid #363537;
 }
 
+.columns {
+    transition: transform 0.3s, z-index 0s, box-shadow 0.3s;
+    z-index: 1;
+}
+
+.columns:hover {
+    transform: scale(1.009);
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
 /*Main Nav*/
 
 #main-nav ul {
