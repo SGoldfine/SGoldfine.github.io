@@ -4,7 +4,7 @@ const toggleNav = () => {
 
 const getProjects = async() => {
   try {
-      return (await fetch("https://final-project-l8qk.onrender.com/")).json();
+      return (await fetch("https://final-project-l8qk.onrender.com/api/projects")).json();
   } catch (error) {
       console.log(error);
   }
@@ -28,7 +28,7 @@ const showProjects = async() => {
       a.append(h3);
 
       const img = document.createElement("img");
-      img.src = project.img;
+      img.src = "https://final-project-l8qk.onrender.com/" + project.img;
       section.append(img);
 
       a.onclick = (e) => {
@@ -84,7 +84,7 @@ const displayDetails = (project) => {
 };
 
 const deleteProject = async(project) => {
-  let response = await fetch(`https://final-project-l8qk.onrender.com/${project._id}`, {
+  let response = await fetch(`https://final-project-l8qk.onrender.com/api/projects/${project._id}`, {
       method: "DELETE",
       headers: {
           "Content-Type": "application/json"
@@ -131,14 +131,14 @@ const addEditProject = async(e) => {
   if (form._id.value == -1) {
       formData.delete("_id");
 
-      response = await fetch("https://final-project-l8qk.onrender.com/", {
+      response = await fetch("https://final-project-l8qk.onrender.com/api/projects", {
           method: "POST",
           body: formData
       });
   } else {
       console.log(...formData);
 
-      response = await fetch(`https://final-project-l8qk.onrender.com/${form._id.value}`, {
+      response = await fetch(`https://final-project-l8qk.onrender.com/api/projects/${form._id.value}`, {
           method: "PUT",
           body: formData
       });
