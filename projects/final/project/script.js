@@ -181,7 +181,7 @@ const resetForm = () => {
 const showHideAdd = (e) => {
   e.preventDefault();
   document.querySelector(".dialog").classList.remove("transparent");
-  document.getElementById("add-edit-project").innerHTML = "Add Project";
+  document.getElementById("add-edit-title").innerHTML = "Add Project";
   resetForm();
 };
 
